@@ -1,0 +1,4 @@
+# 5-15
+com.bennyhuo.kotlin.apt.SampleProcessor
+com.bennyhuo.kotlin.apt.ExportProcessor
+com.bennyhuo.kotlin.apt.SerializerProcessor

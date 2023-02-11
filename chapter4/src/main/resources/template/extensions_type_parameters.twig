@@ -1,0 +1,5 @@
+{# 4-70 #}
+{% for fun in functions %}
+fun{{ fun.typeArgs }} {{ imported(fun.receiverType) }}.{{ fun.functionName }}({{ fun.args }}){{ fun.whereBlock }}
+  = {{ className }}.{{ fun.functionName }}(this{{ fun.argNames }})
+{% endfor %}

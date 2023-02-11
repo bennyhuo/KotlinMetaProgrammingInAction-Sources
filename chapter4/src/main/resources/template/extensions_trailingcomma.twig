@@ -1,0 +1,7 @@
+{# 4-30 #}
+package {{ packageName }}
+
+{% for fun in functions %}
+fun {{ fun.receiverType }}.{{ fun.functionName }}({{ fun.args }})
+  = {{ className }}.{{ fun.functionName }}(this{{ fun.argNames }})
+{% endfor %}

@@ -1,0 +1,34 @@
+<idea-plugin>
+  <name>Inspections for Kotlin Data Classes</name>
+  <actions>
+    <!-- Add your actions here -->
+  </actions>
+  <depends>com.intellij.java</depends>
+
+  <depends>org.jetbrains.kotlin</depends>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+  <description><![CDATA[
+    Reports any data classes which declare properties with delegates or backing fields.
+    ]]></description>
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+
+    <localInspection
+      bundle="messages.DataClass"
+      enabledByDefault="true"
+      groupBundle="messages.DataClass"
+      groupKey="inspection.dataclass.group.name"
+      groupPath="Kotlin"
+      implementationClass="com.bennyhuo.kotlin.dataclass.inspection.DataClassInspection"
+      key="inspection.dataclass.display.name"
+      language="kotlin" level="ERROR"/>
+  </extensions>
+
+  <id>com.bennyhuo.kotlin.dataclass.inspection</id>
+
+  <vendor email="bennyhuo@kotliner.cn" url="http://www.bennyhuo.com">Benny Huo
+  </vendor>
+</idea-plugin>

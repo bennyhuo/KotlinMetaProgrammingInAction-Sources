@@ -1,0 +1,3 @@
+ForbiddenDataClassesRuleSetProvider:
+  ForbiddenDataClasses:
+    active: true
