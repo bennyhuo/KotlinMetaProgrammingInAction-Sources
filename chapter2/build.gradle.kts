@@ -20,7 +20,7 @@ dependencies {
   implementation("org.jetbrains.kotlinx:kotlinx-metadata-jvm:${Version.kotlinxMetadataJvm}")
 
   // 2-22
-  implementation("com.bennyhuo.kotlin:kotlinp:1.6.10")
+  implementation("com.bennyhuo.kotlin:kotlinp:${Version.kotlinp}")
 
   testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.1")
   testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.1")
